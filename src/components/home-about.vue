@@ -160,27 +160,28 @@ onMounted(() => {
   overflow: hidden;
 }
 /*swiper设置 */
-/* .swiper-container {
-  width: 500px;
-  height: 300px;
+.swiper-container {
+  width: 800px;
+  height: 200px;
+
   margin: 20px auto;
 }
 
-.swiper-slide {
+/* .swiper-slide {
   text-align: center;
-  font-size: 18px;
+
   background: #fff;
   display: flex;
   justify-content: center;
   align-items: center;
-}
+} */
 
-.swiper-slide:nth-child(2) {
+/* .swiper-slide:nth-child(2) {
   background: #3183ff;
   color: #fff;
-}
+} */
 
-.swiper-slide p {
+/* .swiper-slide p {
   transform: translateX(-200px);
   opacity: 0;
   transition: all 0.4s;
@@ -191,11 +192,11 @@ onMounted(() => {
   opacity: 1;
 } */
 
-/*zuoce*/
+/*左侧信息*/
 .aside-slogan[data-v-5dd2d15e] {
   position: absolute;
   left: 1rem;
-  bottom: 0.38rem;
+  bottom: 7.38rem;
 }
 .aside-slogan__line[data-v-5dd2d15e] {
   position: absolute;
@@ -212,7 +213,7 @@ onMounted(() => {
   z-index: 1;
   width: 0.4rem;
 }
-/*youce */
+/*右侧 aboutus*/
 .home-about-decoration {
   position: absolute;
   top: 0.9rem;
@@ -253,9 +254,20 @@ onMounted(() => {
   align-items: center;
   margin-bottom: 10rem;
   margin-right: 2rem;
-  top: 10px;
+  top: 1px;
 }
-
+.home-about-cates {
+  -webkit-transition: -webkit-transform 800ms;
+  transition: -webkit-transform 800ms;
+  -o-transition: transform 800ms;
+  transition: transform 800ms;
+  transition:
+    transform 800ms,
+    -webkit-transform 800ms;
+  -webkit-transition-delay: 200ms;
+  -o-transition-delay: 200ms;
+  transition-delay: 200ms;
+}
 .home-about-cates-wrap {
   /**应用于子元素，用于包装关于米哈游的内容 */
   position: relative;
@@ -265,8 +277,8 @@ onMounted(() => {
   cursor: pointer; /*可以点击 */
 }
 .home-about-cate {
-  height: 100px;
-  width: 40px;
+  height: 40px;
+  width: 80px;
   overflow: hidden;
 }
 .home-about-cate-wrap {
@@ -274,8 +286,8 @@ onMounted(() => {
   color: #676b73;
   white-space: nowrap; /**防止文本换行 */
   position: relative;
-  height: 100px;
-  width: 40px;
+  height: 40px;
+  width: 80px;
   -webkit-transform: translateY(-0.6rem); /**设置垂直方向上的位移，可能是为了添加动画效果 */
   -ms-transform: translateY(-0.6rem);
   transform: translateY(-0.6rem);
@@ -288,7 +300,7 @@ onMounted(() => {
   position: absolute;
   top: 50%;
   width: 3px;
-  height: 100px;
+  height: 40px;
   background: #707173;
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
@@ -326,8 +338,8 @@ onMounted(() => {
 }
 
 .home-about-cate .span-wrapper {
-  height: 30px;
-  width: 300px;
+  height: 50px;
+  width: 80px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -338,11 +350,11 @@ onMounted(() => {
 }
 .home-about-cate span {
   display: block;
-  font-size: 30rem;
-  height: 100px;
-  line-height: 30rem;
+  font-size: 0.7rem;
+  height: 50px;
+  line-height: 3.5rem;
   position: relative;
-  padding: 0 4rem;
+  padding: 0 0.7rem;
 }
 .home-about-cate .tab-dark {
   color: #fff;
@@ -358,18 +370,7 @@ onMounted(() => {
 .about-fade-leave-to {
   opacity: 0;
 }
-.home-about-cates {
-  -webkit-transition: -webkit-transform 800ms;
-  transition: -webkit-transform 800ms;
-  -o-transition: transform 800ms;
-  transition: transform 800ms;
-  transition:
-    transform 800ms,
-    -webkit-transform 800ms;
-  -webkit-transition-delay: 200ms;
-  -o-transition-delay: 200ms;
-  transition-delay: 200ms;
-}
+
 /*内容*/
 .home-about-container {
   position: relative;
