@@ -1,8 +1,6 @@
 <!-- 吴亦桐同学采用html文件写的，故引入html页面 -->
 <template>
-  
-  <iframe :src="src" frameborder="0" style="width: 100%; height: 100vh">
-  </iframe>
+  <iframe :src="src" frameborder="0" style="width: 100%; height: 100vh"></iframe>
   <!-- 否则无法触发鼠标滚动事件 -->
   <div id="catch_mouth"></div>
 </template>
@@ -21,6 +19,6 @@ export default {
   position: relative;
   top: -100vh;
   width: 100%;
-  height:100vh;
+  height:70vh;/*不能全覆盖，按钮空出 */
 }
 </style>

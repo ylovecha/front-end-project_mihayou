@@ -1,11 +1,11 @@
 import { createRouter, createWebHistory } from 'vue-router'
-// import HomeView from '../views/HomeView.vue'
 import MainHome from '../views/MainHome.vue'
 import ProductView from '../views/ProductView.vue'
 import KnowView from '../views/KnowView.vue'
 import JoinView from '../views/JoinView.vue'
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
+  // 路由列表
   routes: [
     // {
     //   path: '/',
@@ -48,7 +48,11 @@ const router = createRouter({
       path:'/',
       redirect:'/aside1'
     }
-  ]
+  ],
+  // 保证即使滚动切换路由页面后，页面始终滚动到顶部
+  scrollBehavior() {
+    return { top: 0 }
+  },
 })
 
 export default router

@@ -29,7 +29,6 @@ methods:{
       }
       else{
       // 否则切换路由到下一页
-      console.log(this.routeIndex);
       this.routeIndex++;
      
       this.$router.push('/aside'+this.routeIndex);
@@ -47,7 +46,6 @@ methods:{
         return;
         }else{
       // 否则切换路由到上一页
-      console.log(this.routeIndex);
       this.routeIndex--;
       this.$router.push('/aside'+this.routeIndex);
         }
@@ -60,6 +58,7 @@ watch:{
  $route(to){
  this.routeIndex=to.meta.index;
 }
+
 }
 }
 </script>
@@ -69,7 +68,6 @@ watch:{
     <!-- <img alt="Vue logo" class="logo" src="@/assets/logo.svg" width="125" height="125" /> -->
 
     <div class="wrapper">
-      <!-- <HelloWorld msg="You did it!" /> -->
       <!-- 导航栏使用路由进行导航 -->
       <!-- to指定链接 -->
       <!-- 呈现一个带正确href属性的<a>标签 -->
